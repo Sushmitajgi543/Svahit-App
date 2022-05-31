@@ -1,0 +1,25 @@
+.para{
+    font-size:2.6rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.para-container{
+    width: 100%;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding-top: 50px;
+}
+.container{
+    width: 90%;
+}
+.bhg{
+    margin: 0%;
+   min-height: 90vh;
+}
+.main{
+    display: flex;
+    align-content: center;
+}

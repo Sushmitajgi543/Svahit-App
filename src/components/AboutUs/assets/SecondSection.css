@@ -1,0 +1,17 @@
+h2{
+
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1rem;
+}
+#second
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0px 20px;
+    text-align: justify;
+    justify-content: flex-start;
+
+}
