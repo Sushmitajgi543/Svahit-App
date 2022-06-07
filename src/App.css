@@ -7,3 +7,15 @@ Navbar{
 button{
   background-color: rgb(115,145,184);
 }
+
+html{
+  height: calc(100vh/1920*100vw);
+  width: calc(100vw/1920*100vh);
+  
+  font-size: calc(100vw / 1920 * 10);
+}
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -7,6 +7,17 @@
     margin-bottom: 20px;
     border-radius: 10px;
     padding: 0px 20px;
-   text-align: justify;
 
+}
+#third h2{
+    text-align: left;
+    font-size: 6rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+#third p{
+    font-size: 2rem;
+}
+#last{
+    margin-bottom: 2rem;
 }

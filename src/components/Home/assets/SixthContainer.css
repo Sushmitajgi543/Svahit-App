@@ -1,0 +1,33 @@
+#lastContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    
+    padding: 0 20rem 0 25rem;
+}
+
+.image-para {
+    width: 29vw;
+    font-family: sans-serif,'Inter';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    color: #080808;
+}
+#img-container {
+    padding-top: 20rem;
+}
+#img {
+    width: 50rem;
+    object-fit: contain;
+    margin-right: 13rem;
+}
+#h1para{
+    font-size: 6rem;
+    text-align: left;
+}

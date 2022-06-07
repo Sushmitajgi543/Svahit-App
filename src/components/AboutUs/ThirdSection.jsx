@@ -4,8 +4,8 @@ import './assets/ThirdSection.css';
 
 export const ThirdSection = () => {
     return (
-        <Container  style={{
-            padding: '0px 60px',
+        <Container id='last'  style={{
+            padding: '0px 19rem 0px 19rem',
         }} >
             <Row>
                 <Container>
@@ -26,10 +26,7 @@ export const ThirdSection = () => {
                     <p>
                     As a socially responsible corporate, Svahit will scale newer heights of infinite opportunities to achieve customer delight while fostering an environment of partnership, trust and commitment. </p>
                 </Container>
-
             </Row>
-            
-
         </Container>
     )
 }

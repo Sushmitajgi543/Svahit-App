@@ -6,6 +6,8 @@ export const SecondSection = () => {
     return (
         <Container style={{
             padding: '0px 60px',
+           
+
         }}>
             <Row>
                 <Container

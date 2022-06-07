@@ -1,0 +1,10 @@
+#formBasicEmail{
+    width: 100%;
+    font-size: 2rem;
+    padding: 12px 20px;
+    display: inline-block;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    box-sizing: border-box;
+}

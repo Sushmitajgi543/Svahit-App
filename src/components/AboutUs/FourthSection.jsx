@@ -2,12 +2,13 @@ import React from 'react';
 import { Container, Figure, Row } from 'react-bootstrap';
 import './assets/ThirdSection.css';
 
+
 export const FourthSection = () => {
     return (
-        <Container  style={{
-            padding: '0px 60px',
+        <Container className='mb-5' style={{
+            padding: '0px 19rem',
+            marginButtom: '15rem',
         }} >
-            
             <Row>
                 <Container
                     id='third'>
@@ -15,7 +16,6 @@ export const FourthSection = () => {
                     <p>
                     As a socially responsible corporate, Svahit will scale newer heights of infinite opportunities to achieve customer delight while fostering an environment of partnership, trust and commitment. </p>
                 </Container>
-
             </Row>
             <Row>
                 <Container>
@@ -29,7 +29,6 @@ export const FourthSection = () => {
                     </Figure>
                 </Container>
             </Row>
-
         </Container>
     )
 }

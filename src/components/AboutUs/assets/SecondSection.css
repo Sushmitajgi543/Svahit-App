@@ -1,7 +1,6 @@
-h2{
-
-    font-size: 2rem;
-    font-weight: bold;
+#second h2{
+    text-align: left;
+    font-size: 6rem;
     color: #000;
     margin-bottom: 1rem;
 }
@@ -14,4 +13,11 @@ h2{
     text-align: justify;
     justify-content: flex-start;
 
+}
+#second p{
+    font-size: 2rem;
+}
+.container{
+    display: flex;
+ align-items: center;   
 }

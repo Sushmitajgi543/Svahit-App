@@ -2,15 +2,14 @@
     height: 50px;
 }
 .mb-3 , .container-fluid{
-    background-color: white;
+    background-color: #F5F5F5;
     padding: 0px 40px;
 }
 #menu a {
     color: black  ;
     font-size: 2rem;
-    background-color: rgb(205, 204, 216);
     border-radius: 60px;
-    margin: 2px;
+    margin-left: 26px;
     text-align: center;
 }
 

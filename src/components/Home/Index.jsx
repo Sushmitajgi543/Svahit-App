@@ -9,19 +9,21 @@ import { ThirdContainer } from './ThirdContainer';
 import { FourthContainer } from './FourthConatiner';
 import { FifthContainer } from './FifthConatiner';
 import { SixthConatiner } from './SixthConatiner';
-import {Hover} from '../hovereffect/Index'
-
+import { Rough } from '../rough/Rough';
+import { Banner } from './Banner';
 export const Index = () => {
+    
     return (
         <>
-            <Header />
+             <Header />
             <FirstConatiner />
             <SecondContainer />
             <ThirdContainer />
             <FourthContainer />
             <FifthContainer />
+            <Banner/>
             <SixthConatiner/> 
-            {/* <Hover/>    */}
+            {/* <Rough/> */}
             <Footer />
         </>
     )

@@ -1,18 +1,32 @@
-import React from 'react';
+import { gsap } from "gsap";
+import {React,useRef,useEffect} from 'react';
 import "./Header.css"
 import { Nav,Container,Navbar ,Offcanvas,NavDropdown} from 'react-bootstrap';
 
 export const Header=()=>{
+  const boxRef = useRef();
+  const q = gsap.utils.selector(boxRef);
+ 
+
+  useEffect(() => {
+      gsap.fromTo(q('.logo'),{duration:1,
+          opacity: 0,  y: -90 },{opacity:1,y:10,delay:0.7})
+
+      gsap.fromTo(q('.anchor'),{ duration: 0.4,y:-30,
+          opacity: 0,ease:'bounce' },{stagger:.1,y:10,opacity:1})
+
+    });
+    
     return (
-      <Navbar  key="xl" sticky="top" expand="false" className="mb-3">
+      <Navbar ref={boxRef} key="sm" sticky="top" expand="md" className="mb-3">
       <Container fluid >
         <Navbar.Brand href="/">
           <img className='logo' src="http://svahit.in/includes/logo.png" alt="dbb" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xl`} />
         <Navbar.Offcanvas
-          id={`offcanvasNavbar-expand-xl`}
-          aria-labelledby={`offcanvasNavbarLabel-expand-xxl`}
+          id={`offcanvasNavbar-expand-sm`}
+          aria-labelledby={`offcanvasNavbarLabel-expand-sm`}
           placement="end"
         >
           <Offcanvas.Header closeButton>
@@ -27,21 +41,9 @@ export const Header=()=>{
               <Nav.Link className='anchor' href="/collection">Collection</Nav.Link>
               <Nav.Link className='anchor' href="/catalogue">Catalogue</Nav.Link>
 
-              <Nav.Link href="/contact-us">Contact Us</Nav.Link>
+              <Nav.Link className='anchor' href="/contact-us">Contact Us</Nav.Link>
               
-              {/* <NavDropdown
-                title="Dropdown"
-                id={`offcanvasNavbarDropdown-expand-xl`}
-              >
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown> */}
+              
             </Nav>
             
           </Offcanvas.Body>

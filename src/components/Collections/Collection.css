@@ -1,18 +1,45 @@
-.Collection-Container{
+#Collection-Container{
     display: flex;
-    height: 250px;
+    position: relative;
     flex-direction: column;
     align-items: center;
-  background-size: contain;
-  color: aliceblue;
-    background:linear-gradient(70deg, rgba(0, 0, 0, 0.3), rgba(29, 11, 11, 0.3)), url("http://svahit.in/includes/banner/MATERIAL-GUIDE.jpg");
-    background-repeat: no-repeat;
-    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    padding: 0px;
+    margin: 0px;
+}
+#Collection-Container h1{
+    position: absolute;
+    top: 20rem;
+    left: 23rem;
+    text-align: center;
+    font-size: 18rem;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 19rem;
+}
+#Grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0rem 0px 29rem;
+    margin: 0px;
 }
 .card-group{
     border: none;
+    margin: 2px;
 }
+#Grid .card{
+    border:2px solid grey;  
+    text-align: center;
+    margin: 10px;
+}
+.card-body div{
+    font-size: 2rem;
 
+}
 .card-group img{
-    padding: 30px;
+    margin: 2px;
+    padding: 20px;
 }

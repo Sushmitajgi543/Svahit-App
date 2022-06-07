@@ -29,3 +29,14 @@
 .main{
     height: 100vh;
 }
+.hover-text{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 100px;
+/* or 71% */
+
+
+color: #000000;
+}
