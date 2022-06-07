@@ -9,7 +9,6 @@ import { ThirdContainer } from './ThirdContainer';
 import { FourthContainer } from './FourthConatiner';
 import { FifthContainer } from './FifthConatiner';
 import { SixthConatiner } from './SixthConatiner';
-import { Rough } from '../rough/Rough';
 import { Banner } from './Banner';
 export const Index = () => {
     
