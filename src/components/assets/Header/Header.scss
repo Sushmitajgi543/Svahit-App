@@ -78,8 +78,12 @@
     //     rgba(21, 20, 20, 0.45), 
     //     rgba(231, 228, 228, 0.45)
     //   ),
+    
     // url("https://images.unsplash.com/photo-1613151848917-80e67f421fff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    @include mediaMd{
     background: linear-gradient(#e9ecef, rgb(0 0 0 / 15%)), url(https://images.unsplash.com/photo-1613151848917-80e67f421fff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+
+    }
 
 }
 .navbar-toggler ,
@@ -87,5 +91,8 @@
     border: none !important;
 }
 .navbar-light .navbar-toggler-icon {
-    background-image: url("../Image/menu.png")!important;
+    @include mediaMd{
+        background-image: url("../Image/menu.png")!important;
+    }
+  
 }
