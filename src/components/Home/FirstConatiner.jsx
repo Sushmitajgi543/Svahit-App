@@ -1,6 +1,6 @@
 import { React, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
-import "./assets/FirstContainer.css"
+import "../assets/Home/index.scss";
 import { Container, Row, Col } from 'react-bootstrap';
 export const FirstConatiner = () => {
     const eleRef = useRef();

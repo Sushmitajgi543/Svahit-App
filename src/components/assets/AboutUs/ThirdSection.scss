@@ -1,0 +1,132 @@
+@import "mixin";
+
+#last{
+    margin-bottom: 2rem;
+    padding: 0 19rem;
+    @include mediaL{
+        padding: 0 0 0 5rem;
+    }
+    @include mediaMd{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0 5rem;
+    }
+    #third{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding: 0px 20px;
+        @include mediaL{
+            width: 94%;
+            padding: 0;
+            
+            padding-left:4rem;
+        }
+        @include mediaMd{
+            width: 100%;
+            padding: 0;
+        }
+       h2{
+            text-align: left;
+            font-size: 6rem;
+            width: 100%;
+            color: #000;
+            margin-bottom: 1rem;
+            @include mediaL{
+                font-size: 8rem;
+            }
+            @include mediaMd{
+                width: 100%;
+                text-align: left;
+                margin-top: -20rem;
+                font-size: 9rem;
+                margin-bottom: 5rem;
+            }
+        }
+        p{
+            font-size: 2rem;
+            @include mediaL{
+                font-size: 3rem;
+                line-height: 1.4;
+            }
+            @include mediaMd{
+                font-size: 6rem;
+                line-height: 1.4;
+            }
+        }
+    
+    }
+
+}
+#fouthContainer{
+    
+        padding: 10rem 19rem;
+        margin-bottom: 15rem;
+        @include mediaL{
+            padding: 0 5rem 0 0;
+            margin-bottom: 50px;
+        }
+        @include mediaMd{
+            padding: 0;
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0 5rem;
+        }
+     
+}
+#fourth{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    @include mediaL{
+        width: 94%;
+        padding: 0;
+        padding-right: 4rem;
+       
+    }
+    @include mediaMd{
+        width: 100%;
+        padding: 0;
+    }
+    h2{
+        text-align: left;
+        font-size: 6rem;
+        color: #000;
+        width: 100%;
+        margin-bottom: 1rem;
+        @include mediaL{
+            font-size: 8rem;
+        }
+        @include mediaMd{
+            width: 100%;
+            text-align: left;
+            margin-top: -20rem;
+            font-size: 9rem;
+            margin-bottom: 5rem;
+        }
+    }
+    p{
+        font-size: 2rem;
+        @include mediaL{
+            font-size: 3rem;
+            line-height: 1.4;
+        }
+        @include mediaMd{
+            font-size: 6rem;
+            line-height: 1.4;
+        }
+    }
+}
+
+
+

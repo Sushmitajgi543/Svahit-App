@@ -1,12 +1,10 @@
 import React from 'react';
 import { Container, Figure, Row } from 'react-bootstrap';
-import './assets/ThirdSection.css';
+import '../assets/AboutUs/ThirdSection.scss';
 
 export const ThirdSection = () => {
     return (
-        <Container id='last'  style={{
-            padding: '0px 19rem 0px 19rem',
-        }} >
+        <Container id='last' >
             <Row>
                 <Container>
                     <Figure>

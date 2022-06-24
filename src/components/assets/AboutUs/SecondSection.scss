@@ -1,0 +1,75 @@
+@import "mixin";
+
+#abt-second-section{
+    padding: 10rem 60px;
+    @include mediaL{
+        padding: 0;
+    }
+    @include mediaMd{
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 5rem;
+    }
+
+#second h2{
+    text-align: left;
+    font-size: 6.5rem;
+    color: #000;
+    text-align: left;
+    margin-bottom: 1rem;
+    @include mediaL{
+        font-size: 8rem;
+    }
+    @include mediaMd{
+        width: 100%;
+        
+        margin-top: -10rem;
+        font-size: 9rem;
+        margin-bottom: 5rem;
+    }
+}
+#second
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0px 20px;
+    text-align: justify;
+    justify-content: flex-start;
+    @include mediaL{
+        width: 85%;
+        padding: 0;
+    }
+    @include mediaMd{
+        width: 100%;
+        padding: 0;
+    }
+
+}
+#second p{
+    font-size: 2rem;
+    @include mediaL{
+        font-size: 3rem;
+        line-height: 1.4;
+    }
+    @include mediaMd{
+        font-size: 6rem;
+        line-height: 1.4;
+    }
+}
+img{
+    width: 100%;
+    height: auto;
+    @include mediaL{
+        width: 100%;
+        padding-right: 5rem;
+        height: 75rem;
+    }
+}
+}
+.container{
+    display: flex;
+ align-items: center; 
+
+}

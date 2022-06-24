@@ -3,30 +3,30 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CContainer, CImage, CCol } from '@coreui/react';
 import { Container, Figure, Row } from 'react-bootstrap';
-import './assets/FirstContainer.css';
+import '../assets/Home/index.scss';
 
 export const FourthContainer = () => {
     gsap.registerPlugin(ScrollTrigger);
     const el = useRef();
     const q = gsap.utils.selector(el);
     const t1 = useRef();
-    useEffect(() => {
+    // useEffect(() => {
 
        
-        t1.current = gsap.timeline({
-            scrollTrigger: {
-                trigger: '#image-section',
-                start: 'top center'
-            }
-        })
+    //     t1.current = gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: '#image-section',
+    //             start: 'top center'
+    //         }
+    //     })
 
-            .fromTo(".image1", { x: '-3rem', opacity: 0 },
-                { x: 0, opacity: 1,duration:0.5})
+    //         .fromTo(".image1", { x: '-3rem', opacity: 0 },
+    //             { x: 0, opacity: 1,duration:0.5})
                 
-                .fromTo(".image2", { x: '3rem', opacity: 0 },
-                { x: 0, opacity: 1,duration:0.5 })
+    //             .fromTo(".image2", { x: '3rem', opacity: 0 },
+    //             { x: 0, opacity: 1,duration:0.5 })
 
-    }, []);
+    // }, []);
 
     return (
         <CContainer className='img-container' id="image-section">

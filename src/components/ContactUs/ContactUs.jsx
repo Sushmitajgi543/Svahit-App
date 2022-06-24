@@ -7,7 +7,7 @@ import FormPage from './Form'
 export const ContactUs = () => {
     return (
         <>
-        <Header></Header>
+        <Header active="contact"></Header>
         <FirstConatiner/>
         <FormPage/>
         <Footer/>

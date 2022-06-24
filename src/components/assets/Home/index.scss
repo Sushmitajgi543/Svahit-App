@@ -1,0 +1,258 @@
+@import "mixin";
+* {
+    box-sizing: border-box;
+    font-family: Merriweather;
+}
+
+#heading-container {
+    /* background: radial-gradient(20px 10px at 1095px 410px , #a1b2f3, #fefeff); */
+    position: relative;
+    display: flex;
+    height: 620px;
+    justify-content: center;
+    align-items: center;
+    @include mediaL{
+        height: 120rem;
+    }
+    @include mediaS{
+        height: 100rem;
+    }
+    @include mediaMd{
+        height: 140rem;
+    }
+}
+#color1 {
+    position: absolute;
+    top: -30rem;
+    height: 70vh;
+    background: radial-gradient(230px 180px at 265px 400px, #b6b6b6, transparent);
+    width: 90%;
+    left: 10em;
+    background-blend-mode: screen;
+    @include mediaL{
+        top: -30rem;
+        background: radial-gradient(170px 130px at 205px 245px, #b6b6b6, transparent);
+        height: 90rem;
+    }
+    @include mediaMd{
+        top: -30rem;
+        background: radial-gradient(100px 100px at 125px 175px, #b6b6b6, transparent);
+        height: 200rem;
+        }
+}
+#color2 {
+    position: absolute;
+    top: 20rem;
+    height: 70vh;
+    width: 50%;
+    /* background-color: #111110; */
+    background: radial-gradient(300px 310px at 350px 300px, #bdcbeb, transparent);
+    right: 0rem;
+    background-blend-mode: screen;
+    @include mediaL{
+        top: 20rem;
+        height: 90rem;
+    background: radial-gradient(160px 130px at 180px 160px, #bdcbeb, transparent);
+
+    }
+    @include mediaMd{
+        top: 30rem;
+        background: radial-gradient(120px 100px at 125px 175px,#bdcbeb, transparent);
+        height: 200rem;
+    }
+}
+.heading {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    top: 32rem;
+    left: 28rem;
+    /* background: radial-gradient(circle  100px , #878e45, #fefffe); */
+
+    font-size: 18rem;
+    line-height: 1.1;
+    text-align: center;
+
+    color: #000000;
+    @include mediaL{
+        top: 50rem;
+        font-size: 24rem;
+        line-height: 0.9;
+        left :10rem;
+    }
+    @include mediaMd{
+        top: 75rem;
+        font-size: 24rem;
+        line-height: 0.9;
+        left :16rem;
+    }
+}
+.second-section {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    @include mediaL{
+        height: 100rem;
+    }
+    @include mediaMd{
+        padding-top:15rem ;
+        width: 100%;
+        height: 190rem;
+        
+    }
+    .figure {
+        @include mediaMd{
+            padding: 0 15rem;
+        }
+        display: inline-block;
+       
+    }
+    img {
+        @include mediaMd{
+            width: 100%;
+        }
+        width: 100%;
+        height: 100%;
+    }
+}
+// fourth section container---------------------------
+
+#image-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    padding: 0 23rem;
+    @include mediaL{
+        height: 130rem;
+        padding: 0 10rem;
+    }
+    @include mediaMd{
+        padding: 0 15rem;
+        height: 130rem;
+        margin-top: 15rem;
+    }
+    
+    img {
+        width: 55rem;
+        object-fit: contain;
+        margin-right: 13rem;
+        @include mediaMd{
+            width: 75rem;
+        }
+        @include mediaL{
+            width: 70rem;
+        
+        }
+    }
+    #image2 {
+        margin-right: 0%;
+        margin-top: 13rem;
+        @include mediaMd{
+            
+        margin-left: 0rem;
+        }
+        @include mediaL{
+            
+            margin-left: 7rem;
+            }
+    }
+}
+
+// fifth section container---------------------------
+
+#hover-container {
+    display: flex;
+    align-items: flex-start;
+    height: 100vh;
+    justify-content: center;
+    margin: 0%;
+    width: 100%;
+    padding-left: 10rem;
+    @include mediaL{
+        height: 150rem;
+    }
+    @include mediaMd{
+        padding:0 5rem;
+        margin-top: 15rem;
+        height: 180rem;
+    }
+    .row{
+        @include mediaMd{
+            padding: 5rem;
+
+
+        }
+        
+    }
+    #hover-text{
+        text-align: center;
+         font-size: 18rem;
+          line-height: 1;
+
+    }
+    .container1 {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        // padding-top: 10px;
+
+        .swipeimage {
+            position: absolute;
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            transform: translate3d(0, 0, 0);
+            top: 0;
+            left: 0;
+            z-index: -10;
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+        }
+        .text {
+            display: flex;
+            align-items: baseline;
+            
+         font-size: 18rem;
+          line-height: 1;
+            @include mediaMd{
+                font-size: 24rem;
+                margin-bottom: 3rem;
+                line-height: 1.2;
+            }
+            @include mediaL{
+                font-size: 20rem;
+                margin-bottom: 3rem;
+                line-height: 1;
+            }
+        }
+        li {
+            font-size: 2rem;
+            color: #b6b6b6;
+        }
+    }
+}
+// banner section container---------------------------
+.banner-img {
+    height: 100vh;
+    padding: 10rem 0;
+    object-fit: contain;
+    @include mediaL{
+        height: 100rem;
+    }
+    @include mediaMd{
+        height: 130rem;
+        margin-top: 15rem;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+

@@ -1,0 +1,177 @@
+@import "mixin";
+#Catalogue-Container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    height: 100rem;
+}
+#cat-heading{
+    position: absolute;
+    top:35rem;
+    left: 60rem;
+    font-size: 16rem;
+    @include mediaMd{
+        left: 50rem;
+        top:25rem;
+        font-size: 20rem;
+    }
+
+}
+#Catalogue-Quote h1{
+    position: absolute;
+    top:68rem;
+    left: 73rem;
+    text-align: center;
+    font-size: 2rem;
+    /* text-transform: sma */
+    color: rgb(111, 109, 109);
+    @include mediaL{
+        font-size: 2.5rem;
+        left: 68rem;
+        top: 75rem;
+    }
+    @include mediaMd{
+        font-size: 4rem;
+        left: 50rem;
+        top: 80rem;
+    }
+}
+ 
+#catimg{
+    padding: 0 17rem;
+    height:74rem;
+        width:100%;
+
+    @include mediaL{
+        padding: 0 7rem;
+
+        height: 90rem;
+    }
+    img{
+        width: 100%;
+        
+    }
+}
+#para-container {
+    margin: 0% 0% 5rem 0%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20rem;
+    width: 100%;
+    padding-left: 18rem;
+    @include mediaMd{
+        width: 100%;
+        padding-left: 17rem;
+        padding-right: 0;
+     }
+     @include mediaL{
+        width: 100%;
+        padding-left: 7rem;
+        padding-right: 0rem;
+     }
+    h2 {
+        font-family: " Merriweather";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 6rem;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+        color: #030023;
+        @include mediaL{
+            font-size: 8rem;
+            line-height: 1.1;
+         }
+        @include mediaMd{
+           font-size: 13rem;
+           line-height: 1.1;
+           margin-bottom: 5rem;
+        }
+    }
+}
+#para-button {
+    margin: 0% 0% 6rem 0%;
+    align-items: flex-start;
+    width: 87vw;
+    display: flex;
+    padding-left: 18rem;
+    @include mediaMd{
+        width:100%;
+        flex-direction: column;
+        padding-left: 18rem;
+     }
+     @include mediaL{
+        padding-left: 7rem;
+     }
+    span {
+        
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 1.8;
+        margin-right: 5rem;
+        width: 20vw;
+        font-family: sans-serif, "Inter";
+        font-style: normal;
+        letter-spacing: 0.1em;
+
+        // letter-spacing: 0.1em;
+
+        color: #080808;
+        @include mediaL{
+           width: 50rem;
+            font-size: 3rem;
+            line-height: 1.6;
+        }
+        @include mediaMd{
+            width: 100%;
+            margin-bottom: 5rem;
+            padding-right: 10rem;
+           font-size: 6rem;
+           line-height: 1.5;
+        }
+    }
+}
+/* #Catalogue-Quote{
+    padding: 10rem 10rem 0 20rem;
+    color : #000;
+    position: absolute;
+    top:60rem;
+    left: 4rem;
+    font-family: 'Merriweather';
+} */
+
+#para-button1 {
+    margin: 0% 0% 6rem 0%;
+    width: 87vw;
+    padding: 0 25rem;
+    margin-bottom: 20rem;
+    @include mediaMd{
+        padding-left: 18rem;
+     }
+     @include mediaL{
+        padding-left: 13rem;
+     }
+
+button {
+    background:linear-gradient(to right, #00D4FF, #090979,#030023);
+    color: white;
+    border: none;
+    font-family: "Inter", sans-serif;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    padding:1.5rem 2rem 1.5rem 4rem;
+    @include mediaL{
+        font-size: 2rem;
+    }
+    @include mediaMd{
+        font-size: 3.5rem;
+        padding:2.5rem 5rem 2.5rem 4rem;
+
+    }
+    span{
+        margin-left: 2rem;
+    }
+}
+}

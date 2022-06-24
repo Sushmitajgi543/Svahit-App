@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Figure } from 'react-bootstrap'
 import { CContainer } from '@coreui/react'
-
+import poster from '../assets/Image/poster.png'
 export const SecondContainer=()=>{
     gsap.registerPlugin(ScrollTrigger);
     const el = useRef();
@@ -24,16 +24,22 @@ export const SecondContainer=()=>{
     
 
     }, []);
+    var x = window.matchMedia("(max-width:439px)")
+
     return(
-<CContainer  style={{height:"100vh"
-,display:"flex", justifyContent:"center",padding:"10rem 8rem" }}ref={el} md className='mb-5'>
+<CContainer  ref={el} md className='second-section mb-5'>
 <Figure>
-                        <Figure.Image
-                            width={"100%"}
-                            height={"700"}
+    {x.matches ? (<Figure.Image
+                            
                             className='img1'
-                            src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                        />
+                            src="https://images.unsplash.com/photo-1589895869111-cab6bf8354c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2068&q=80"
+                        />):(
+                        <Figure.Image
+                            
+                            className='img1'
+                            src={poster}
+                        />)}
+                        
 
                     </Figure>
 </CContainer>

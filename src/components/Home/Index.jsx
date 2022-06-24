@@ -1,8 +1,8 @@
 import React from 'react';
 import { Header } from '../Header Footer/Header';
 
-import "./assets/index.css"
-import Footer from '../Header Footer/Footer';
+import "../assets/Home/index.scss"
+import {Footer} from '../Footer/Footer';
 import { FirstConatiner } from './FirstConatiner';
 import { SecondContainer } from './SecondContainer';
 import { ThirdContainer } from './ThirdContainer';
@@ -14,7 +14,8 @@ export const Index = () => {
     
     return (
         <>
-             <Header />
+        <div>
+        <Header home="true"/>
             <FirstConatiner />
             <SecondContainer />
             <ThirdContainer />
@@ -23,6 +24,8 @@ export const Index = () => {
             <Banner/>
             <SixthConatiner/> 
             {/* <Rough/> */}
+        </div>
+            
             <Footer />
         </>
     )

@@ -1,0 +1,156 @@
+@import "mixin";
+#lastContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin-top: -5vh;
+    width: 100%;
+
+    padding: 0 20rem 0 20rem;
+    @include mediaL{
+        height: 120rem;
+        padding: 0 10rem;
+    }
+    @include mediaMd{
+        height: 290rem;
+        padding-left: 20rem;
+        padding-right: 0;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .div1 {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        height: 45%;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-right: 10rem;
+        @include mediaL{
+            height: 60rem;
+        }
+        @include mediaMd{
+        width: 100%;
+        // margin-top: -6rem;
+        height: 80rem;
+        
+        }
+
+        h1 {
+            font-size: 6.5rem;
+            text-align: left;
+            line-height: 1;
+            color: #030023;
+            @include mediaMd{
+                font-size: 13rem;
+                margin-bottom: 7rem;
+            }
+            @include mediaL{
+                font-size: 8rem;
+                margin-bottom: 6rem;
+            }
+        }
+        p {
+            width: 100%;
+            padding-right: 7rem;
+            font-family: sans-serif, "Inter";
+            font-style: normal;
+            font-weight: 400;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            font-size: 1.8rem;
+            line-height: 1.8;
+            letter-spacing: 0.1em;
+            color: #080808;
+            @include mediaL{
+                font-size: 3rem;
+                line-height: 1.6;
+                margin-bottom: 5rem;
+
+            }
+            @include mediaMd{
+                font-size: 6rem;
+                line-height: 1.5;
+                margin-bottom: 9rem;
+            }
+        }
+        button {
+            background:linear-gradient(to right, #00D4FF, #090979,#030023);
+            color: white;
+            border: none;
+            font-family: "Inter", sans-serif;
+            border-radius: 15px;
+            font-size: 1.6rem;
+            padding:1.5rem 2rem 1.5rem 4rem;
+            @include mediaL{
+                font-size: 2.2rem;
+            }
+            @include mediaMd{
+                font-size: 3.5rem;
+                padding:2.5rem 5rem 2.5rem 4rem;
+    
+            }
+            span{
+                margin-left: 2rem;
+            }
+        }
+    }
+    .div2 {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        @include mediaMd{
+            width: 60%;
+        }
+        #img {
+            position: absolute;
+            top: -35rem;
+            left: 0;
+            width: 30rem;
+            object-fit: contain;
+            @include mediaL{
+                width: 33rem;
+                top: -30rem;
+                width: 40rem;
+            }
+            @include mediaMd{
+                width: 90rem;
+                top: -70rem;
+                left:-40rem
+            }
+            /* margin-right: 13rem; */
+        }
+
+        #img2 {
+            position: absolute;
+            padding: 3rem;
+            top: -24rem;
+            background-color: #f5f5f5;
+            left: 20rem;
+            width: 40rem;
+            height: 50rem;
+            border: none;
+            object-fit: contain;
+            @include mediaL{
+                top: -20rem;
+                left: 25rem;
+                width: 49rem;
+                padding: 4rem;
+
+                height: auto;
+            }
+            @include mediaMd{
+                top: -55rem;
+                left: 25rem;
+                width:98rem;
+                padding: 4rem;
+                height: auto;
+            }
+            /* margin-right: 13rem; */
+        }
+    }
+}

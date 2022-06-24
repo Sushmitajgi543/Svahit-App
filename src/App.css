@@ -9,8 +9,6 @@ button{
 }
 
 html{
-  height: calc(100vh/1920*100vw);
-  width: calc(100vw/1920*100vh);
   
   font-size: calc(100vw / 1920 * 10);
 }

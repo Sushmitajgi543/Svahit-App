@@ -1,28 +1,42 @@
 #form{
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    background-color: transparent;
+    justify-content: center;
     align-items: center;
 }
-#form label{
-    font-size:4rem;
-    font-family: 'Merriweather';
+#form1{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row{
+    background-color: transparent;
 }
 #form input{
-    font-size:3rem;
-    padding: 10px;
+    font-size:2.5rem;
+    padding: 10px 15px;
+    /* margin-bottom: 20px; */
+    background-color: transparent;
     font-family: 'Merriweather';
 }
 #gd{
     border: 0px;
-    border-bottom: 1px solid black;
+    background-color: none;
+    background-clip: padding-box;
+    border-bottom: 1px solid rgb(181, 179, 179);
 }
 #form small{
     font-size: 2rem;
 }
 #form button{
     font-size: 3rem;
+    margin-bottom: 20px;
 }
 #form .card{
     width: 40%;
@@ -39,4 +53,7 @@
 }
 #form .card-text{
     font-size: 2rem;
+}
+#formBasicEmail{
+    display: flex;
 }

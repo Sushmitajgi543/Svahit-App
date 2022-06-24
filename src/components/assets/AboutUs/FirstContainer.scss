@@ -1,0 +1,78 @@
+@import "mixin";
+*{
+    box-sizing: border-box;
+    font-family: Merriweather;
+}
+.about-us{
+    @include mediaL{
+        height: 360rem;
+    }
+}
+.aboutus-Container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    background-color: transparent;
+    margin: 0px;
+    height: 100rem;
+    @include mediaL{
+        height: 60rem;
+    }
+    @include mediaMd{
+        height: 60rem;
+    }
+}
+#color{
+    position: absolute;
+    top: -30rem;
+    height:90vh;
+    background: radial-gradient(230px 180px at 265px 400px , #b6b6b6, transparent); 
+    width: 100%;
+    left: 10rem;
+    background-blend-mode: screen;
+    @include mediaL{
+        top: -30rem;
+        left: 1rem;
+        background: radial-gradient(150px 130px at 205px 240px, #b6b6b6, transparent);
+        height: 100rem;
+    }
+    @include mediaMd{
+        display: none;
+    }
+}
+#abt-heading{
+    position: absolute;
+    top:35rem;
+    left: 55rem;
+    font-size: 16rem;
+    @include mediaL{
+        font-size: 20rem;
+        left: 50rem;
+        
+    }
+    @include mediaMd{
+        font-size: 25rem;
+        left: 45rem;
+    }
+}
+#h1{
+    position: absolute;
+    top:55rem;
+    left: 58rem;
+    text-align: center;
+    font-size: 2.4rem;
+    /* text-transform: sma */
+    color: rgb(111, 109, 109);
+    @include mediaL{
+        font-size: 3rem;
+       
+        left: 55rem;
+    }
+    @include mediaMd{
+        font-size: 4.5rem;
+        left: 43rem;
+        top: 65rem;
+    }
+}

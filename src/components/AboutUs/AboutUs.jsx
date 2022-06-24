@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../Header Footer/Footer';
+import {Footer} from '../Footer/Footer';
 import { Header } from '../Header Footer/Header';
 import { FirstConatiner } from './FirstConatiner';
 import { FourthSection } from './FourthSection';
@@ -9,11 +9,15 @@ import { ThirdSection } from './ThirdSection';
 export const AboutUs = () => {
     return (
         <>
-        <Header></Header>
+        <div className='about-us'>
+        <Header about="true"></Header>
             <FirstConatiner/>
             <SecondSection/>
             <ThirdSection/>
             <FourthSection/>
+            
+        </div>
+        
             <Footer/>
         </>
     )

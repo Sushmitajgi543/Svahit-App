@@ -1,0 +1,91 @@
+@import "mixin";
+.logo{
+    height: 50px;
+    margin-bottom: 10px;
+}
+.mb-3 , .container-fluid{
+    background-color: #F5F5F5;
+    padding: 0px 40px;
+    @include mediaMd {
+        padding: 0px 10rem;
+    }
+    
+}
+
+ .navbar-toggler {
+    width:25px;
+    height: 25px;
+    span{
+     width: 100%;
+     height: 100%;
+    }
+ }
+
+#menu {a {
+    color: black  ;
+    font-size: 2rem;
+    border-radius: 60px;
+    font-family: sans-serif;
+    margin-left: 26px;
+    text-align: center;
+    @include mediaL{
+        font-size: 3rem;
+    }
+    @include mediaMd{
+        font-size: 6.5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 20rem;
+        text-align: left;
+    }
+}
+#true{
+    color: #164F9C;
+}
+
+}
+/* #menu a:hover{
+    background-color: rgb(207, 219, 230);
+    color: white;
+} */
+#offcanvasNavbarLabel-expand-xl{
+    font-size: 3rem;
+    @include mediaMd {
+        font-size: 9rem;
+        
+       }
+}
+
+#close{
+    @include mediaMd{
+        display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5rem 5rem;
+    width: 100%;
+    }
+    
+}
+.btn-close{
+    width: 80px;
+    color: black;
+    font-size: 5rem;
+}
+
+#offcanvasNavbar-expand-sm{
+    width: 390px;
+    // background: linear-gradient(
+    //     rgba(21, 20, 20, 0.45), 
+    //     rgba(231, 228, 228, 0.45)
+    //   ),
+    // url("https://images.unsplash.com/photo-1613151848917-80e67f421fff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    background: linear-gradient(#e9ecef, rgb(0 0 0 / 15%)), url(https://images.unsplash.com/photo-1613151848917-80e67f421fff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+
+}
+.navbar-toggler ,
+.navbar-light {
+    border: none !important;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../Image/menu.png")!important;
+}

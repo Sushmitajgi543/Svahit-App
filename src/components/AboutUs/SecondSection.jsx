@@ -1,14 +1,10 @@
 import React from 'react';
 import { Container, Figure, Row } from 'react-bootstrap';
-import './assets/SecondSection.css';
+import '../assets/AboutUs/SecondSection.scss';
 
 export const SecondSection = () => {
     return (
-        <Container style={{
-            padding: '0px 60px',
-           
-
-        }}>
+        <Container id='abt-second-section'>
             <Row>
                 <Container
                     id='second'>
@@ -25,7 +21,7 @@ export const SecondSection = () => {
             </Row>
             <Row>
                 <Container>
-                    <Figure>
+                    <Figure >
                         <Figure.Image
                             width={471}
                             height={150}

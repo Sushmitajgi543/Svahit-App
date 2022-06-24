@@ -1,0 +1,117 @@
+
+@import "mixin";
+#Collection-Container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height:100rem;
+    padding: 0px;
+    margin: 0px;
+    @include mediaL{
+        height: 90rem;
+    }
+
+h1{
+    position: absolute;
+    top: 25rem;
+    left: 70rem;
+    text-align: center;
+    font-size: 16rem;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 19rem;
+    @include mediaL{
+        font-size: 20rem;
+        margin-bottom: 0rem;
+    }
+    @include mediaMd{
+        font-size: 20rem;
+        left: 65rem;
+        margin-bottom: 0rem;
+    }
+}
+.h1{
+    position: absolute;
+    top: 40rem;
+    left: 60rem;
+    text-align: center;
+    font-size: 16rem;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 19rem;
+    @include mediaL{
+        font-size: 20rem;
+        left: 50rem;
+        margin-bottom: 0rem;
+    }
+    @include mediaMd{
+        font-size: 20rem;
+        left: 50rem;
+        top: 43rem;
+        margin-bottom: 0rem;
+    }
+
+}
+h2{
+    position: absolute;
+    top:60rem;
+    left: 70rem;
+    text-align: center;
+    font-size: 2.4rem;
+    /* text-transform: sma */
+    color: rgb(111, 109, 109);
+   
+    @include mediaMd{
+        font-size: 4.5rem;
+        left: 45rem;
+        top: 65rem;
+    }
+}
+}
+#Grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0rem 0px 29rem;
+    margin: 0px;
+    @include mediaL{
+        padding: 0px 0rem 0px 9rem;
+    }
+    @include mediaMd{
+        padding: 0px 7rem 0px 10rem;
+    }
+}
+.card-group{
+    border: none;
+    margin: 2px;
+    @include mediaMd{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+#Grid .card{
+    border:1px solid rgb(249, 244, 244);  
+    text-align: center;
+    margin: 10px;
+@include mediaMd{
+    width: 40%;
+}
+}
+.card-body div{
+    font-size: 2rem;
+    @include mediaL{
+        font-size: 2.5rem;
+    }
+    @include mediaMd{
+        font-size: 5rem;
+    }
+
+}
+.card-group img{
+    margin: 2px;
+    padding: 20px;
+}

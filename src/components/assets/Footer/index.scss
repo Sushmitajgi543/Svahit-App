@@ -1,0 +1,224 @@
+@import "mixin";
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.footer {
+    background-color: #020024;
+    height: 93vh;
+    padding-top: 10rem;
+    @include mediaS {
+        padding-top: 10rem;
+        height: 95yvh;
+    }
+    @include mediaL {
+        padding-top: 10rem;
+        height: 72vh;
+        padding:0 10rem;
+    }
+    @include mediaMd {
+        margin-top: 50rem;
+        padding-top: 10rem;
+        padding-left: 15rem;
+        height: 300rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    &-content {
+        padding: 0 0px;
+        width: 100%;
+        display: flex;
+        height: 40vh;
+        flex-direction: row;
+        padding-bottom: 5rem;
+        @include mediaL {
+            height: 30vh;
+        }
+        @include mediaS {
+            height: 20vh;
+            // flex-direction: column;
+        }
+        @include mediaMd {
+            padding-top: 10rem;
+            height: 120rem;
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+        &-left {
+            width: 60%;
+            flex: 1;
+            padding-top: 5rem;
+            @include mediaS {
+                width: 100%;
+            }
+            @include mediaMd {
+                width: 100%;
+                margin-top: -30rem;
+                padding-top: 0;
+            }
+            @include mediaL{
+                padding-top: 0;
+            }
+            
+            img{
+                width: 30%;
+                height: 35%;
+                margin: 0;
+                margin-left: -6rem;
+                object-fit: contain;    
+                @include mediaMd {
+                    width: 20%;
+                    margin-left: 0rem;
+                   
+                }
+                @include mediaL {
+                    width: 30%;
+                    margin-left: -3rem;
+                   
+                }
+            }
+            p {
+                margin-top: 8rem;
+                font-size: 2rem;
+                font-style: normal;
+                font-weight:normal;
+                font-family: "Inter", sans-serif;
+                color: #FFFFFF;
+                line-height: 2;
+                padding-right: 20rem;
+                margin-bottom: 5rem;
+                @include mediaMd {
+                    font-size: 4.5rem;
+                    width: 100%;
+                    line-height: 1.6;
+                }
+                @include mediaL {
+                    font-size: 3rem;
+                    width: 100%;
+                    margin-top: 5rem;
+                    padding-right: 6rem;
+                    line-height: 1.6;
+                }
+                @include mediaS {
+                    margin-bottom: 5rem;
+                    padding-right: 0rem;
+                    font-size: 6rem;
+                    line-height: 1.4;
+                }
+            }
+            
+        }
+        &-right {
+            width: 40%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            @include mediaS {
+                width: 100%;
+            }
+            @include mediaMd{
+                width: 100%;
+            }
+            img {
+                width: 35%;
+                @include mediaMd{
+                    width: 25%;
+                }
+            }
+        }
+    }
+    &-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 6rem 0;
+        width: 100%;
+        @include mediaMd {
+            padding: 0rem;
+        }
+        @include mediaS {
+            padding: 5rem;
+        }
+        .columnDiv{
+            display: flex;
+            width: 50%;
+            height: 25vh;
+            padding-right: 5rem;
+            justify-content: space-between;
+            flex-direction: column;
+            @include mediaMd {
+                width: 100%;
+                padding-right:15rem;
+                height: 50rem;
+                margin-bottom: 10rem;
+            }
+        }
+        .second{
+            margin-left: 10rem;
+            padding-right: 0;
+            padding:0  0 0 5rem ;
+            @include mediaMd {
+                margin-left: 0rem;
+                padding: 0;
+                padding-right:15rem;
+                height: 50rem;
+            }
+            span{
+                margin-left: 20px;
+            }
+        }
+        span {
+            color: #FFFFFF;
+            font-size: 2rem;
+            line-height: 1.8;
+            @include mediaS {
+                font-size: 6rem;
+                line-height: 1.4;
+            }
+            @include mediaL {
+                font-size: 2.4rem;
+                line-height: 1.6;
+            }
+            @include mediaMd {
+                font-size: 6rem;
+                line-height: 1.6;
+            }
+        }
+
+     
+    }
+    hr {
+        color: rgb(252, 251, 251);
+    }
+    .hr{
+    width:108%;padding:0;color:#FFFFFF;
+        @include mediaMd{
+            width: 70%;
+            margin-left: -20rem;
+        }
+    }
+    &-copyright {
+        display: flex;
+        width: 100%;
+        color: #5a5a5a;
+        font-size: 1.5rem;
+        font-weight: 400;
+        justify-content: space-between;
+        @include mediaS {
+            font-size: 4.5rem;
+            padding: 0 12rem;
+        }
+        @include mediaMd {
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-left: -20rem;
+            font-size: 4.6rem;
+        }
+    }
+}

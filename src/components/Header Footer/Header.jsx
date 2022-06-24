@@ -1,9 +1,9 @@
 import { gsap } from "gsap";
 import {React,useRef,useEffect} from 'react';
-import "./Header.css"
+import "../assets/Header/Header.scss";
 import { Nav,Container,Navbar ,Offcanvas,NavDropdown} from 'react-bootstrap';
 
-export const Header=()=>{
+export const Header=(props)=>{
   const boxRef = useRef();
   const q = gsap.utils.selector(boxRef);
  
@@ -21,7 +21,9 @@ export const Header=()=>{
       <Navbar ref={boxRef} key="sm" sticky="top" expand="md" className="mb-3">
       <Container fluid >
         <Navbar.Brand href="/">
+          
           <img className='logo' src="http://svahit.in/includes/logo.png" alt="dbb" />
+          
         </Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xl`} />
         <Navbar.Offcanvas
@@ -29,17 +31,17 @@ export const Header=()=>{
           aria-labelledby={`offcanvasNavbarLabel-expand-sm`}
           placement="end"
         >
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-xl`}>
+          <Offcanvas.Header id="close" closeButton>
+            {/* <Offcanvas.Title id={`offcanvasNavbarLabel-expand-xl`}>
               Svahit
-            </Offcanvas.Title>
+            </Offcanvas.Title> */}
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav id="menu"className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link className='anchor' href="/">Home</Nav.Link>
-              <Nav.Link className='anchor' href="/about-us">About Us</Nav.Link>
-              <Nav.Link className='anchor' href="/collection">Collection</Nav.Link>
-              <Nav.Link className='anchor' href="/catalogue">Catalogue</Nav.Link>
+              <Nav.Link id={props.home}className='anchor' href="/">Home</Nav.Link>
+              <Nav.Link id={props.about}className='anchor' href="/about-us">About Us</Nav.Link>
+              <Nav.Link id={props.collection} className='anchor' href="/collection">Collection</Nav.Link>
+              <Nav.Link id={props.catalogue}className='anchor' href="/catalogue">Catalogue</Nav.Link>
 
               <Nav.Link className='anchor' href="/contact-us">Contact Us</Nav.Link>
               

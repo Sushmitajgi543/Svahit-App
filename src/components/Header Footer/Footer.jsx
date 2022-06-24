@@ -7,25 +7,25 @@ const Footer = () => {
 	const eleRef = useRef();
 	const t1 = useRef();
 	const q = gsap.utils.selector(eleRef);
-	useEffect(() => {
-		t1.current = gsap.timeline({
-			scrollTrigger: {
-				trigger: '.box',
-				start: 'center bottom'
-			}
-		})
-			.fromTo('.box h1',
-				{ y: '100', opacity: 0 },
-				{ y: 10, opacity: 1, ease: 'back.out(1.7)', delay: 1, duration: 0.5 }, "-=1")
+	// useEffect(() => {
+	// 	t1.current = gsap.timeline({
+	// 		scrollTrigger: {
+	// 			trigger: '.box',
+	// 			start: 'center bottom'
+	// 		}
+	// 	})
+	// 		.fromTo('.box h1',
+	// 			{ y: '100', opacity: 0 },
+	// 			{ y: 10, opacity: 1, ease: 'back.out(1.7)', delay: 1, duration: 0.5 }, "-=1")
 
-			.fromTo('.box p',
-				{ y: '90', opacity: 0 },
-				{ stagger: .8, y: 10, opacity: 1, ease: 'back.out(1.7)', duration: 0.5 }, "-=0.1")
-			.fromTo('span , form',
-				{ y: '90', opacity: 0 },
-				{ stagger: .2, y: 10, opacity: 1, ease: 'back.out(1.7)', duration: 1 }, "-=0.1");
+	// 		.fromTo('.box p',
+	// 			{ y: '90', opacity: 0 },
+	// 			{ stagger: .8, y: 10, opacity: 1, ease: 'back.out(1.7)', duration: 0.5 }, "-=0.1")
+	// 		.fromTo('span , form',
+	// 			{ y: '90', opacity: 0 },
+	// 			{ stagger: .2, y: 10, opacity: 1, ease: 'back.out(1.7)', duration: 1 }, "-=0.1");
 
-	})
+	// })
 	return (
 		<Box className='box'>
 
@@ -38,52 +38,19 @@ const Footer = () => {
 							arm bands, wrist bands and t-shirts
 							to our valued clients.</p>
 						<hr style={{ color: "white" }} />
+						<Column>
+							<Heading>Location</Heading>
 
-					</Column>
-					<Column style={{ width: "35%" }}>
-						<Heading>Get In Touch</Heading>
-						<Form style={{ fontSize: "2rem", color: "white" }}>
-
-							<Form.Group controlId="formBasicEmail">
-								{/* <Form.Label>Name</Form.Label> */}
-								<Form.Control type="text" placeholder="Enter Your Name" />
-
-							</Form.Group>
-							<Form.Group controlId="formBasicEmail">
-								{/* <Form.Label>Email address</Form.Label> */}
-								<Form.Control type="email" placeholder="Enter email" />
-
-							</Form.Group>
-							<Form.Group controlId="formBasicEmail">
-								{/* <Form.Label>Message</Form.Label> */}
-								<Form.Control type="text" placeholder="Message" />
-							</Form.Group>
-							<button
-								style={{
-									color: "white",
-									backgroundColor: "black",
-									padding: "2px 5px",
-									marginTop:"10px"
-								}}>Send</button>
-							{/* <Button variant="primary" type="submit">Send</Button> */}
-						</Form>
-
-					</Column>
-
-
-					<Column>
-						<Heading>Location</Heading>
-
-						<span style={{ fontSize: "2rem", color: "#fff" }}>
-							Kottanpur, Uttar Pradesh, India
-							<hr />
-							<span >
-								+91-1234567890
+							<span style={{ fontSize: "2rem", color: "#fff" }}>
+								Kottanpur, Uttar Pradesh, India
+								<hr />
+								<span >
+									+91-1234567890
+								</span>
 							</span>
-						</span>
-					</Column>
-					<Column>
-						<Heading>Social Media</Heading>
+						</Column>
+						<Column>
+						<Heading></Heading>
 						<div>
 
 							<FooterLink href="#">
@@ -118,19 +85,58 @@ const Footer = () => {
 						<br />
 						<hr style={{ color: "#fff" }} />
 					</Column>
+						
+					</Column>
+					<Column style={{width:"20%"}}>
+							<Heading>Menu</Heading>
+							<Ul>
+								<A href=""><Li> Home</Li></A>
+								<A href=""><Li> About Us</Li></A>
+								<A href=""><Li> Catalogue</Li></A>
+								<A href=""><Li> Collections</Li></A>
+
+								<A href=""><Li>Privacy & Policy </Li></A>
+								<A href=""><Li>Terms & Conditions</Li>	</A>
+							</Ul>
+
+						</Column>
+					<Column style={{ width: "35%" }}>
+						<Heading>Get In Touch</Heading>
+						<Form style={{ fontSize: "2rem", color: "white" }}>
+
+							<Form.Group controlId="formBasicEmail">
+								{/* <Form.Label>Name</Form.Label> */}
+								<Form.Control type="text" placeholder="Enter Your Name" />
+
+							</Form.Group>
+							<Form.Group controlId="formBasicEmail">
+								{/* <Form.Label>Email address</Form.Label> */}
+								<Form.Control type="email" placeholder="Enter email" />
+
+							</Form.Group>
+							<Form.Group controlId="formBasicEmail">
+								{/* <Form.Label>Message</Form.Label> */}
+								<Form.Control type="text" placeholder="Message" />
+							</Form.Group>
+							<button
+								style={{
+									color: "white",
+									backgroundColor: "black",
+									padding: "2px 5px",
+									marginTop: "10px"
+								}}>Send</button>
+							{/* <Button variant="primary" type="submit">Send</Button> */}
+						</Form>
+
+					</Column>
+
+
+
+					
 				</Row>
 				<Row>
-					<Span>
-						<Ul>
-							<A href=""><Li> Home</Li></A>
-							<A href=""><Li> About Us</Li></A>
-							<A href=""><Li> Catalogue</Li></A>
-							<A href=""><Li> Collections</Li></A>
 
-							<A href=""><Li>Privacy and Policy </Li></A>
-							<A href=""><Li>Terms and Conditions</Li>	</A>
-						</Ul>
-					</Span>
+
 				</Row>
 			</Container>
 		</Box>

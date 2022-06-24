@@ -64,12 +64,10 @@ font-size: 2rem;
 `;
 export const Ul = styled.ul`
 list-style: none;
-display: inline-flex;
 margin-bottom: 0;
 `;
 export const A = styled.a`
 color: #fff;
-margin-top: 20px;
 font-size: 2rem;
 text-decoration: none;
 
@@ -79,9 +77,6 @@ text-decoration: none;
 }
 `;
 
-
 export const Li = styled.li`
-margin-right: 20px;
 color: #fff;
-
 `;
