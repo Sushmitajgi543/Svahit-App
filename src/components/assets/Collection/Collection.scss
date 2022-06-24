@@ -75,7 +75,7 @@ h2{
     flex-direction: row;
     align-items: center;
     width: 100%;
-    padding: 0px 0rem 0px 29rem;
+    padding: 0px 0rem 0px 20rem;
     margin: 0px;
     @include mediaL{
         padding: 0px 0rem 0px 9rem;
@@ -113,5 +113,8 @@ h2{
 }
 .card-group img{
     margin: 2px;
+    width: 350px;
+    height: 450px;
     padding: 20px;
+    
 }
