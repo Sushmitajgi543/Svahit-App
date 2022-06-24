@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
 import {React,useRef,useEffect} from 'react';
 import "../assets/Header/Header.scss";
+import logo from "../assets/Image/blue-lOGO.png"
 import { Nav,Container,Navbar ,Offcanvas,NavDropdown} from 'react-bootstrap';
 
 export const Header=(props)=>{
@@ -22,7 +23,7 @@ export const Header=(props)=>{
       <Container fluid >
         <Navbar.Brand href="/">
           
-          <img className='logo' src="http://svahit.in/includes/logo.png" alt="dbb" />
+          <img className='logo' src={logo} alt="dbb" />
           
         </Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xl`} />
