@@ -26,7 +26,7 @@ export const SecondSection = () => {
                             width={471}
                             height={150}
                             alt="171x180"
-                            src="http://svahit.in/includes/about-img.jpg"
+                            src="https://images.unsplash.com/photo-1613228489368-75c0bad290ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fHZpc2lvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
                         />
                     </Figure>
                 </Container>

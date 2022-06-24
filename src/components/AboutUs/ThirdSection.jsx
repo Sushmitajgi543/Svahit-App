@@ -12,7 +12,7 @@ export const ThirdSection = () => {
                             width={471}
                             height={150}
                             alt="171x180"
-                            src="http://svahit.in/includes/about/vision.jpg"
+                            src="https://images.unsplash.com/photo-1487081968683-2a6664e725ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fHZpc2lvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
                         />
                     </Figure>
                 </Container>

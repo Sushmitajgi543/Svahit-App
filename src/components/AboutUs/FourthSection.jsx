@@ -21,7 +21,7 @@ export const FourthSection = () => {
                             width={471}
                             height={150}
                             alt="171x180"
-                            src="http://svahit.in/includes/about/mission.jpg"
+                            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE4fHxtaXNzaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                         />
                     </Figure>
                 </Container>
