@@ -12,6 +12,13 @@
         height: 120rem;
         padding: 0 10rem;
     }
+    @include mediaS{
+        height: 350rem;
+        padding-left: 20rem;
+        padding-right: 0;
+        justify-content: space-around;
+        flex-direction: column;
+    }
     @include mediaMd{
         height: 290rem;
         padding-left: 20rem;
@@ -36,6 +43,12 @@
         height: 80rem;
         
         }
+        @include mediaS{
+            width: 100%;
+            margin-top: -16rem;
+            height: 80rem;
+            
+            }
 
         h1 {
             font-size: 6.5rem;
@@ -45,6 +58,10 @@
             @include mediaMd{
                 font-size: 13rem;
                 margin-bottom: 7rem;
+            }
+            @include mediaS{
+                font-size: 13rem;
+                margin-bottom: 10rem;
             }
             @include mediaL{
                 font-size: 8rem;
@@ -75,6 +92,11 @@
                 line-height: 1.5;
                 margin-bottom: 9rem;
             }
+            @include mediaS{
+                font-size: 6rem;
+                line-height: 1.5;
+                margin-bottom: 9rem;
+            }
         }
         button {
             background:linear-gradient(to right, #00D4FF, #090979,#030023);
@@ -92,6 +114,11 @@
                 padding:2.5rem 5rem 2.5rem 4rem;
     
             }
+            @include mediaS{
+                font-size: 4rem;
+                padding:2.5rem 5rem 2.5rem 4rem;
+    
+            }
             span{
                 margin-left: 2rem;
             }
@@ -105,6 +132,9 @@
         position: relative;
         @include mediaMd{
             width: 60%;
+        }
+        @include mediaS{
+            width: 100%;
         }
         #img {
             position: absolute;
@@ -121,6 +151,11 @@
                 width: 90rem;
                 top: -70rem;
                 left:-40rem
+            }
+            @include mediaS{
+                width: 90rem;
+                top: -110rem;
+                left:-5rem
             }
             /* margin-right: 13rem; */
         }
@@ -147,6 +182,13 @@
                 top: -55rem;
                 left: 25rem;
                 width:98rem;
+                padding: 4rem;
+                height: auto;
+            }
+            @include mediaS {
+                top: -85rem;
+                left: 65rem;
+                width:95rem;
                 padding: 4rem;
                 height: auto;
             }

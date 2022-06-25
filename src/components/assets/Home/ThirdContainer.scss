@@ -10,6 +10,11 @@
     @include mediaL{
         height: 120rem;
     }
+    @include mediaS{
+        justify-content: center;
+        margin-top: 15rem;
+            height: 130rem;
+        }
     @include mediaMd{
     justify-content: center;
     margin-top: 15rem;
@@ -22,7 +27,9 @@
         display: flex;
         padding: 0 8rem;
         justify-content: flex-end;
-        
+        @include mediaS{
+           display: none;
+        }
         @include mediaL{
             height: 15rem;
         }
@@ -30,6 +37,7 @@
             display: none;
         }
         img {
+            
             width: 15%;
             height: 100%;
         }
@@ -51,6 +59,11 @@
             padding-left: 15rem;
             padding-right: 15rem;
          }
+         @include mediaS{
+            width: 100%;
+            padding-left: 15rem;
+            padding-right: 15rem;
+         }
         h2 {
             font-family: " Merriweather";
             font-style: normal;
@@ -68,6 +81,11 @@
                line-height: 1.1;
                margin-bottom: 5rem;
             }
+            @include mediaS{
+                font-size: 13rem;
+                line-height: 1.1;
+                margin-bottom: 5rem;
+             }
         }
     }
     #para-button {
@@ -78,6 +96,11 @@
         padding-left: 30rem;
         padding-right: 10rem;
         @include mediaMd{
+            width:100%;
+            flex-direction: column;
+            padding-left: 15rem;
+         }
+         @include mediaS{
             width:100%;
             flex-direction: column;
             padding-left: 15rem;
@@ -104,6 +127,11 @@
                 font-size: 3rem;
                 line-height: 1.6;
             }
+            @include mediaS{
+                width: 100%;
+                 font-size: 6rem;
+                 line-height: 1.4;
+             }
             @include mediaMd{
                 width: 100%;
                 margin-bottom: 5rem;
@@ -123,7 +151,11 @@
          @include mediaL{
             padding-left: 15rem;
          }
-    }
+         @include mediaS{
+            padding-left: 15rem;
+        
+         }
+   
     button {
         background:linear-gradient(to right, #00D4FF, #090979,#030023);
         color: white;
@@ -132,6 +164,11 @@
         border-radius: 15px;
         font-size: 1.6rem;
         padding:1.5rem 2rem 1.5rem 4rem;
+        @include mediaS{
+            font-size: 4rem;
+            padding:2.5rem 5rem 2.5rem 4rem;
+
+        }
         @include mediaL{
             font-size: 2rem;
         }
@@ -140,12 +177,13 @@
             padding:2.5rem 5rem 2.5rem 4rem;
 
         }
+        
         span{
             margin-left: 2rem;
         }
     }
 }
-
+}
 
 
 
