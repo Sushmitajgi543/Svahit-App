@@ -82,8 +82,9 @@
                margin-bottom: 5rem;
             }
             @include mediaS{
-                font-size: 13rem;
+                font-size: 15rem;
                 line-height: 1.1;
+                padding: 0;
                 margin-bottom: 5rem;
              }
         }
@@ -165,7 +166,7 @@
         font-size: 1.6rem;
         padding:1.5rem 2rem 1.5rem 4rem;
         @include mediaS{
-            font-size: 4rem;
+            font-size: 5rem;
             padding:2.5rem 5rem 2.5rem 4rem;
 
         }
