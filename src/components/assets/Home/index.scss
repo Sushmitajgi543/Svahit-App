@@ -216,6 +216,9 @@
         height: 60vh;
     }
     .row{
+        @include mediaS{
+            width: 100%;
+        }
         @include mediaMd{
             padding: 5rem;
         }
