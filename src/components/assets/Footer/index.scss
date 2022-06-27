@@ -19,6 +19,12 @@
         height: 72vh;
         padding: 0 10rem;
     }
+    @include mediaXl{
+        padding-top: 20rem;
+        height: 72vh;
+        height: 115rem;
+        padding: 0 10rem;
+    }
     @include mediaMd {
         margin-top: 50rem;
         padding-top: 10rem;
@@ -88,6 +94,10 @@
                     width: 30%;
                     margin-left: -3rem;
                 }
+                @include mediaXl{
+                    width: 30%;
+                    margin-left: -3rem;
+                }
             }
             p {
                 margin-top: 8rem;
@@ -116,6 +126,12 @@
                     padding-right: 6rem;
                     line-height: 1.6;
                 }
+                @include mediaXl {
+                    font-size: 2.5rem;
+                    margin-top: 5rem;
+                    padding-right: 6rem;
+                    line-height: 1.6;
+                }
             }
         }
         &-right {
@@ -128,6 +144,8 @@
             }
             @include mediaMd {
                 width: 100%;
+            }
+            @include mediaXl {margin-top: 5rem;
             }
             img {
                 width: 35%;
@@ -237,6 +255,9 @@
         @include mediaS {
             font-size: 4.5rem;
             padding: 0 12rem;
+        }
+        @include mediaXl {
+            font-size: 2.5rem;
         }
         @include mediaMd {
             flex-direction: column;

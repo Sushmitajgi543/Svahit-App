@@ -12,6 +12,10 @@
         height: 120rem;
         padding: 0 10rem;
     }
+    @include mediaXl{
+        height: 120rem;
+        padding: 0 24rem;
+    }
     @include mediaS{
         height: 350rem;
         padding-left: 20rem;
@@ -67,6 +71,10 @@
                 font-size: 8rem;
                 margin-bottom: 6rem;
             }
+            @include mediaXl{
+                font-size: 6.5rem;
+                margin-bottom: 6rem;
+            }
         }
         p {
             width: 100%;
@@ -83,6 +91,13 @@
             color: #080808;
             @include mediaL{
                 font-size: 3rem;
+                line-height: 1.6;
+                margin-bottom: 5rem;
+
+            }
+            @include mediaXl
+                {
+                    font-size: 2.5rem;
                 line-height: 1.6;
                 margin-bottom: 5rem;
 
@@ -147,6 +162,11 @@
                 top: -30rem;
                 width: 40rem;
             }
+            @include mediaXl{
+                width: 33rem;
+                top: -35rem;
+                width: 40rem;
+            }
             @include mediaMd{
                 width: 90rem;
                 top: -70rem;
@@ -171,6 +191,14 @@
             border: none;
             object-fit: contain;
             @include mediaL{
+                top: -20rem;
+                left: 25rem;
+                width: 49rem;
+                padding: 4rem;
+
+                height: auto;
+            }
+            @include mediaXl{
                 top: -20rem;
                 left: 25rem;
                 width: 49rem;
