@@ -108,6 +108,7 @@
     }
     @include mediaS{
         top: 75rem;
+        font-weight: 700;
         font-size: 27rem;
         line-height: 0.9;
         left :5rem;
@@ -281,6 +282,7 @@
             }
             @include mediaS{
                 font-size: 26rem;
+                font-weight: 800;
                 margin-bottom: 3rem;
                 line-height: 1.2;
             }
