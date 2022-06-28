@@ -14,7 +14,7 @@
         height: 120rem;
     }
     @include mediaS{
-        height: 140rem;
+        height: 160rem;
     }
     @include mediaMd{
         height: 140rem;
@@ -170,7 +170,7 @@
     }
     @include mediaS{
         height: 130rem;
-        padding: 0 7rem 0 15rem;
+        padding: 20rem 7rem 0 15rem;
     }
     @include mediaMd{
         padding: 0 15rem;
@@ -237,6 +237,8 @@
         margin-top: 0;
         padding:0 5rem;
         height: 60vh;
+        padding-top: 10rem;
+
     }
     .row{
         @include mediaS{
